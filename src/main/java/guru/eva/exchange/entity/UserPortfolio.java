@@ -22,7 +22,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "portfolio")
+@Table(name = "user_portfolio")
 public class UserPortfolio {
 
 	@Id
@@ -43,7 +43,7 @@ public class UserPortfolio {
 
 	@ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
 	@JoinTable(name = "user_shares", 
-				joinColumns = @JoinColumn(name = "col", referencedColumnName = "portfolio_id"), 
+				joinColumns = @JoinColumn(name = "portfolio_id", referencedColumnName = "portfolio_id"), 
 				inverseJoinColumns = @JoinColumn(name = "share_id", referencedColumnName = "share_id"))
 	private Set<Share> userShares = new HashSet<>();
 
