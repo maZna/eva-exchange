@@ -28,7 +28,7 @@ public class Share {
 	@Column(name = "share_id")
 	private Integer shareId;
 
-	@Column(length = 3, nullable = false, unique = true, updatable = false)
+	@Column(name = "share_code", length = 3, nullable = false, unique = true, updatable = false)
 	private String shareCode;
 
 	@OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.PERSIST, mappedBy = "share")

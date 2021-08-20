@@ -26,6 +26,7 @@ public class SharePrice {
 	@Column(name = "update_id")
 	private Integer updateId;
 
+	@Column(name = "update_date")
 	private Date updateDate;
 	
 	@ManyToOne(fetch = FetchType.LAZY)

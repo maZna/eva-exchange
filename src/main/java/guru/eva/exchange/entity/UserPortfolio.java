@@ -22,7 +22,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "share")
+@Table(name = "portfolio")
 public class UserPortfolio {
 
 	@Id
