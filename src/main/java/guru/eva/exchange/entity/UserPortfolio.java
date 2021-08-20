@@ -6,15 +6,12 @@ import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
-import javax.persistence.SequenceGenerator;
-
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
@@ -30,8 +27,6 @@ public class UserPortfolio {
 
 	@Id
 	@Column(name = "portfolio_id")
-	@GeneratedValue(generator = "portfolio_id_seq")
-	@SequenceGenerator(name = "portfolio_id_seq", initialValue = 123822, allocationSize = 153204)
 	private Integer portfolioId;
 
 	@Column(name = "portfolio_user_occupation", length = 500)

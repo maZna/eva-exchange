@@ -8,11 +8,9 @@ import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
-import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
@@ -28,8 +26,6 @@ public class Share {
 
 	@Id
 	@Column(name = "share_id")
-	@GeneratedValue(generator = "share_id_seq")
-	@SequenceGenerator(name = "share_id_seq", initialValue = 324452, allocationSize = 373103)
 	private Integer shareId;
 
 	@Column(length = 3, nullable = false, unique = true, updatable = false)
