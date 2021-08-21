@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+ app-server:
+  build:
+   context: ./target
+   dockerfile: Dockerfile
+  ports:
+   - "8081:8081"
+  restart: always
+  depends_on: 
+   - db
+  environment:
+   SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/eva?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false&allowPublicKeyRetrieval=true
+   SPRING_DATASOURCE_USERNAME: user
+   SPRING_DATASOURCE_PASSWORD: userpass
+ db:
+  image: mysql:8.0
+  ports:
+   - "3306:3306"
+  restart: always
+  environment:
+   MYSQL_DATABASE: eva
+   MYSQL_USER: user
+   MYSQL_PASSWORD: userpass
+   MYSQL_ROOT_PASSWORD: root
