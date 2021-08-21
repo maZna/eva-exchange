@@ -10,11 +10,11 @@ INSERT INTO user_portfolio (portfolio_id, portfolio_user_address, portfolio_user
 INSERT INTO user_portfolio (portfolio_id, portfolio_user_address, portfolio_user_dob, portfolio_user_name, portfolio_user_occupation) VALUES ('13622', 'Ankara, Turkey', '1995-03-27 00:00:00', 'Umair Ahmed', 'University Professor');
 INSERT INTO user_portfolio (portfolio_id, portfolio_user_address, portfolio_user_dob, portfolio_user_name, portfolio_user_occupation) VALUES ('13679', 'Izmir, Turkey', '1990-08-21 00:00:00', 'Hakan Teker', 'Architect');
 
-INSERT INTO share_price (update_id, share_currency, share_price, update_date, share_id) VALUES ('1234', 'USD', '25.21', '2021-08-20 00:00:00', 'SFJ');
-INSERT INTO share_price (update_id, share_currency, share_price, update_date, share_id) VALUES ('1213', 'USD', '34.65', '2021-08-20 00:00:00', 'ACQ');
-INSERT INTO share_price (update_id, share_currency, share_price, update_date, share_id) VALUES ('1245', 'USD', '45.12', '2021-08-20 00:00:00', 'VQC');
-INSERT INTO share_price (update_id, share_currency, share_price, update_date, share_id) VALUES ('1266', 'USD', '8.42', '2021-08-20 00:00:00', 'QKM');
-INSERT INTO share_price (update_id, share_currency, share_price, update_date, share_id) VALUES ('1297', 'USD', '55.08', '2021-08-20 00:00:00', 'BHF');
+INSERT INTO share_price (update_id, share_currency, share_price, update_date, share_id) VALUES ('1234', 'USD', '25', '2021-08-20 00:00:00', 'SFJ');
+INSERT INTO share_price (update_id, share_currency, share_price, update_date, share_id) VALUES ('1213', 'USD', '34', '2021-08-20 00:00:00', 'ACQ');
+INSERT INTO share_price (update_id, share_currency, share_price, update_date, share_id) VALUES ('1245', 'USD', '45', '2021-08-20 00:00:00', 'VQC');
+INSERT INTO share_price (update_id, share_currency, share_price, update_date, share_id) VALUES ('1266', 'USD', '81', '2021-08-20 00:00:00', 'QKM');
+INSERT INTO share_price (update_id, share_currency, share_price, update_date, share_id) VALUES ('1297', 'USD', '55', '2021-08-20 00:00:00', 'BHF');
 
 INSERT INTO user_shares (portfolio_id, share_id) VALUES ('13432', '25533');
 INSERT INTO user_shares (portfolio_id, share_id) VALUES ('13432', '25623');
