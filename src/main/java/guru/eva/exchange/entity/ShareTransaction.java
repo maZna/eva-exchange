@@ -1,6 +1,5 @@
 package guru.eva.exchange.entity;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -35,18 +34,18 @@ public class ShareTransaction {
 	@Enumerated(EnumType.STRING)
 	private TransactionType transactionType;
 	
-	@OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
+	@OneToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "transaction_user", referencedColumnName = "portfolio_id")
 	private UserPortfolio transactionUser;
 	
-	@OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
+	@OneToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "transaction_share", referencedColumnName = "share_code")
 	private Share transactionShare;
 	
 	@Column(name = "number_of_shares")
 	private Integer numberOfShares;
 	
-	@OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
+	@OneToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "transaction_share_price", referencedColumnName = "update_id")
 	private SharePrice transactionSharePrice;
 }

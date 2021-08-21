@@ -1,5 +1,6 @@
 package guru.eva.exchange.entity;
 
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -14,15 +15,19 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Data
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
 @Table(name = "share")
-public class Share {
+public class Share implements Serializable {
+
+	private static final long serialVersionUID = 4596505853975463384L;
 
 	@Id
 	@Column(name = "share_id")
@@ -36,4 +41,9 @@ public class Share {
 
 	@ManyToMany(mappedBy = "userShares", fetch = FetchType.LAZY)
 	private Set<UserPortfolio> sharePortFolios = new HashSet<>();
+	
+	@Override
+	public int hashCode() {
+		return shareId;
+	}
 }

@@ -13,7 +13,7 @@ public class TradeRequest implements Serializable {
 
 	private static final long serialVersionUID = -3730331848891509679L;
 	private Integer portfolioId;
-	private Integer shareId;
+	private String shareCode;
 	private Integer quantity;
 
 }

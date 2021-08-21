@@ -15,10 +15,12 @@ import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Data
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
@@ -46,5 +48,10 @@ public class UserPortfolio {
 				joinColumns = @JoinColumn(name = "portfolio_id", referencedColumnName = "portfolio_id"), 
 				inverseJoinColumns = @JoinColumn(name = "share_id", referencedColumnName = "share_id"))
 	private Set<Share> userShares = new HashSet<>();
+	
+	@Override
+	public int hashCode() {
+		return portfolioId;
+	}
 
 }

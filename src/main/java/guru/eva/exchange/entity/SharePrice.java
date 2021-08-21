@@ -37,7 +37,7 @@ public class SharePrice {
 	private Date updateDate;
 	
 	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "share_id", referencedColumnName = "share_code", nullable = false)
+	@JoinColumn(name = "share_code", referencedColumnName = "share_code", nullable = false)
 	private Share share;
 	
 	@Column(name = "share_currency")
