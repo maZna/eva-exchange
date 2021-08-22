@@ -27,7 +27,7 @@ public class ShareTransaction {
 	@Id
 	@Column(name = "transaction_id")
 	@GeneratedValue(generator = "transaction_seq")
-	@SequenceGenerator(name = "transaction_seq", initialValue = 23477, allocationSize = 46043)
+	@SequenceGenerator(name = "transaction_seq", initialValue = 23490, allocationSize = 46043)
 	private Integer transactionId;
 
 	@Column(name = "transaction_type")

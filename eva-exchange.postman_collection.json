@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"portfolioId\": 13432,\r\n    \"shareCode\": \"SFJ\",\r\n    \"quantity\": 2\r\n}",
+					"raw": "{\r\n    \"portfolioId\": 13432,\r\n    \"shareCode\": \"BHF\",\r\n    \"quantity\": 2\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
