@@ -15,3 +15,15 @@ INSERT INTO share_price (update_id, share_currency, share_price, update_date, sh
 INSERT INTO share_price (update_id, share_currency, share_price, update_date, share_code) VALUES ('1245', 'USD', '45', '2021-08-20 00:00:00', 'VQC');
 INSERT INTO share_price (update_id, share_currency, share_price, update_date, share_code) VALUES ('1266', 'USD', '81', '2021-08-20 00:00:00', 'QKM');
 INSERT INTO share_price (update_id, share_currency, share_price, update_date, share_code) VALUES ('1297', 'USD', '55', '2021-08-20 00:00:00', 'BHF');
+
+INSERT INTO share_transaction (transaction_id,number_of_shares,transaction_type,transaction_share,transaction_share_price,transaction_user) VALUES (23477,3,'BUY','SFJ',1234,13432);
+INSERT INTO share_transaction (transaction_id,number_of_shares,transaction_type,transaction_share,transaction_share_price,transaction_user) VALUES (23478,2,'BUY','QKM',1266,13524);
+INSERT INTO share_transaction (transaction_id,number_of_shares,transaction_type,transaction_share,transaction_share_price,transaction_user) VALUES (23479,4,'BUY','BHF',1297,13524);
+INSERT INTO share_transaction (transaction_id,number_of_shares,transaction_type,transaction_share,transaction_share_price,transaction_user) VALUES (23480,1,'SELL','BHF',1297,13524);
+INSERT INTO share_transaction (transaction_id,number_of_shares,transaction_type,transaction_share,transaction_share_price,transaction_user) VALUES (23481,3,'BUY','ACQ',1213,13679);
+INSERT INTO share_transaction (transaction_id,number_of_shares,transaction_type,transaction_share,transaction_share_price,transaction_user) VALUES (23482,2,'SELL','ACQ',1213,13679);
+INSERT INTO share_transaction (transaction_id,number_of_shares,transaction_type,transaction_share,transaction_share_price,transaction_user) VALUES (23483,1,'BUY','VQC',1245,13452);
+INSERT INTO share_transaction (transaction_id,number_of_shares,transaction_type,transaction_share,transaction_share_price,transaction_user) VALUES (23484,5,'BUY','SFJ',1234,13622);
+INSERT INTO share_transaction (transaction_id,number_of_shares,transaction_type,transaction_share,transaction_share_price,transaction_user) VALUES (23485,3,'BUY','ACQ',1213,13622);
+INSERT INTO share_transaction (transaction_id,number_of_shares,transaction_type,transaction_share,transaction_share_price,transaction_user) VALUES (23486,2,'SELL','SFJ',1234,13622);
+INSERT INTO share_transaction (transaction_id,number_of_shares,transaction_type,transaction_share,transaction_share_price,transaction_user) VALUES (23487,2,'SELL','SFJ',1234,13622);

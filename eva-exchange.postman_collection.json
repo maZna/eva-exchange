@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "1ec59d6b-5354-4843-a577-38d8abe04c39",
+		"name": "eva-exchange",
+		"description": "Postman collection for eva-exchange buy/sell endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8081/trade/sell",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"portfolioId\": 13432,\r\n    \"shareCode\": \"SFJ\",\r\n    \"quantity\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/trade/sell",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"trade",
+						"sell"
+					]
+				},
+				"description": "Performs a sell transaction for a given user for a given share for a given quantity"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/trade/buy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"portfolioId\": 13679,\r\n    \"shareCode\": \"VQC\",\r\n    \"quantity\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/trade/buy",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"trade",
+						"buy"
+					]
+				},
+				"description": "Performs a buy operation for a given user for a given share for a given quantity"
+			},
+			"response": []
+		}
+	]
+}
