@@ -35,9 +35,7 @@ and then running the following to perform a clean shutdown:
 docker-compose down
 ```
 
-Once running, the application interface can be accessed at http://localhost:3000/\*\*. The service endpoints can be accessed at http://localhost:8081/.
-
-Its as simple as this! :smile:
+Once running, the service endpoints can be accessed at http://localhost:8081/.
 
 ### Documentation
 
