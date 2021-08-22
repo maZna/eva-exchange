@@ -1,6 +1,5 @@
 package guru.eva.exchange.entity;
 
-import java.math.BigDecimal;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -44,7 +43,7 @@ public class SharePrice {
 	@Enumerated(EnumType.STRING)
 	private ShareCurrency shareCurrency;
 
-	@Column(name = "share_price", precision = 10, scale = 2)
-	private BigDecimal sharePrice;
+	@Column(name = "share_price")
+	private Integer sharePrice;
 
 }
